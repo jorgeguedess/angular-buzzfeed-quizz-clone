@@ -5,6 +5,7 @@ interface Option {
   id: number;
   name: string;
   alias: string;
+  image?: string;
 }
 
 interface Question {

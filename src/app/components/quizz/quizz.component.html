@@ -14,6 +14,10 @@
       (click)="playerChoose(option.alias)"
       class="btn-option"
     >
+      <ng-container *ngIf="option.image">
+        <img [src]="option.image" [alt]="option.name" class="image-option" />
+      </ng-container>
+
       {{ option.name }}
     </button>
   </div>
